@@ -6,3 +6,6 @@ add_subdirectory(libs)
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE cmake_vs_tests::boo)
 target_link_libraries(${PROJECT_NAME} PRIVATE cmake_vs_tests::foo)
+
+
+install(TARGETS ${PROJECT_NAME} DESTINATION bin/${PROJECT_NAME})
